@@ -46,32 +46,10 @@
 
 # SQL Transformation:
 
-USE HR_Analytics;
-GO
-
-SELECT 
-    [Age],
-    [Department],
-    [MonthlyIncome],
-    [Gender],
-    [MaritalStatus],
-    [BusinessTravel],
-    
-
-    CASE 
-        WHEN [Attrition] = 1 THEN 1
-        ELSE 0 
-    END AS [Attrition_Numeric],
-    
-   
-    CASE 
-        WHEN [Attrition] = 1 THEN 'Yes'
-        ELSE 'No' 
-    END AS [Attrition_Status]
-
-FROM [HR-Employee-Attrition];
-
- Performing these transformations in SQL Server reduced preprocessing requirements and ensured a cleaner dataset before importing it into Power BI.
+Performing these transformations in SQL Server reduced preprocessing requirements and ensured a cleaner dataset before importing it into Power BI.
+### SQL Script
+The complete SQL Query used for preparation is available in:
+[SQLQuery1.sql](SQLQuery1.sql)
 
  # Data Preparation in Power BI
 
