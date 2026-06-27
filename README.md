@@ -1,4 +1,6 @@
 # HR Analytics & Employee Attrition Dashboard
+## Dashborad Preview 
+![Dashboard](dashboard.png.png)
 
 # Interactive Live Report
 
